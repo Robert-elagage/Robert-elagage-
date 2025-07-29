@@ -3,181 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Services professionnels d'élagage et d'entretien d'arbres. Contactez-nous pour un devis gratuit !">
-    <title>Élagage Pro - Services d'élagage et entretien d'arbres</title>
-    
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-XXXXXXX');
-    </script>
-    <!-- End Google Tag Manager -->
-
-    <!-- CSS intégré pour simplicité -->
+    <title>Robert Élagage - Services d'élagage professionnel</title>
     <style>
+        /* Réinitialisation des styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
         }
+
         body {
+            font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
         }
+
+        /* En-tête */
         header {
-            background: #2e7d32;
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            height: 400px;
             color: white;
-            padding: 1rem;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            font-weight: bold;
-        }
-        nav a:hover {
-            background: #1b5e20;
-            border-radius: 5px;
-        }
-        .hero {
-            background: url('https://images.unsplash.com/photo-1508948956644-0017e703d257?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-            height: 100vh;
+            text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            color: white;
-            margin-top: 60px;
+            flex-direction: column;
         }
-        .hero-content {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 2rem;
-            border-radius: 10px;
-        }
-        .hero h1 {
+
+        header h1 {
             font-size: 3rem;
-            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        .hero p {
+
+        header p {
             font-size: 1.2rem;
-            margin-bottom: 1.5rem;
+            margin-top: 10px;
         }
-        .btn {
-            background: #2e7d32;
+
+        /* Navigation */
+        nav {
+            background: #2e7d32; /* Vert forêt pour rappeler l'élagage */
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
             color: white;
-            padding: 0.8rem 1.5rem;
             text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
+            font-size: 1.1rem;
         }
-        .btn:hover {
-            background: #1b5e20;
+
+        nav ul li a:hover {
+            text-decoration: underline;
         }
-        .services {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 2rem;
-        }
-        .services h2 {
+
+        /* Sections */
+        section {
+            padding: 50px 20px;
             text-align: center;
-            margin-bottom: 2rem;
-            font-size: 2rem;
         }
-        .service-grid {
+
+        #accueil {
+            background: #f4f4f4;
+        }
+
+        #services, #a-propos {
+            background: white;
+        }
+
+        #contact {
+            background: #e0f2e9;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #2e7d32;
+        }
+
+        .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
+
         .service-card {
-            background: #f5f5f5;
-            padding: 1.5rem;
-            border-radius: 10px;
-            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         .service-card h3 {
-            margin-bottom: 1rem;
+            margin-bottom: 10px;
+            color: #2e7d32;
         }
-        footer {
+
+        /* Formulaire de contact */
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        #contact label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        #contact input, #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #contact button {
             background: #2e7d32;
             color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
         }
+
+        #contact button:hover {
+            background: #1b5e20;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Responsive */
         @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-            }
-            nav a {
-                margin: 0.5rem 0;
-            }
-            .hero h1 {
+            header h1 {
                 font-size: 2rem;
             }
-            .hero p {
-                font-size: 1rem;
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
+    <!-- En-tête -->
     <header>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <h1>Robert Élagage</h1>
+        <p>Votre expert en élagage et entretien d'arbres</p>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Élagage Pro</h1>
-            <p>Services professionnels d'élagage et d'entretien d'arbres pour vos espaces verts.</p>
-            <a href="contact.html" class="btn">Demander un devis</a>
-        </div>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil">
+        <h2>Bienvenue chez Robert Élagage</h2>
+        <p>Nous offrons des services professionnels d'élagage, d'abattage et d'entretien d'arbres pour particuliers et entreprises. Faites confiance à notre expertise pour sublimer votre environnement.</p>
     </section>
 
-    <section class="services">
+    <!-- Section Services -->
+    <section id="services">
         <h2>Nos Services</h2>
-        <div class="service-grid">
+        <div class="services-grid">
             <div class="service-card">
                 <h3>Élagage d'arbres</h3>
-                <p>Taille professionnelle pour la santé et l'esthétique de vos arbres.</p>
+                <p>Taille douce ou sévère pour la santé et l'esthétique de vos arbres.</p>
             </div>
             <div class="service-card">
-                <h3>Abattage sécurisé</h3>
-                <p>Abattage d'arbres dangereux avec des techniques sécurisées.</p>
+                <h3>Abattage</h3>
+                <p>Abattage sécurisé d'arbres dangereux ou encombrants.</p>
             </div>
             <div class="service-card">
                 <h3>Entretien de jardins</h3>
-                <p>Services complets pour maintenir vos espaces verts en parfait état.</p>
+                <p>Tonte, désherbage et aménagement pour un jardin impeccable.</p>
             </div>
         </div>
     </section>
 
+    <!-- Section À propos -->
+    <section id="a-propos">
+        <h2>À Propos de Nous</h2>
+        <p>Avec plus de 10 ans d'expérience, Robert Élagage est votre partenaire de confiance pour tous vos travaux d'élagage et d'entretien paysager. Nous sommes passionnés par la nature et engagés à fournir un service de qualité.</p>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Élagage Pro. Tous droits réservés.</p>
+        <p>&copy; 2025 Robert Élagage. Tous droits réservés.</p>
+        <p>Contact : contact@robert-elagage.fr | 01 23 45 67 89</p>
     </footer>
 </body>
 </html>
