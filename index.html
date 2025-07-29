@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robert Élagage - Services d'Élagage</title>
     <style>
-        /* CSS intégré pour un design clair et professionnel */
+        /* CSS pour un design similaire à robert-elagage-5.webnode.fr */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f6f5;
+            background-color: #f8f8f8;
             color: #333;
             line-height: 1.6;
         }
@@ -18,18 +18,18 @@
             background-color: #1b5e20;
             color: white;
             text-align: center;
-            padding: 40px 20px;
+            padding: 30px 20px;
         }
         header h1 {
             margin: 0;
-            font-size: 2.8em;
+            font-size: 2.5em;
         }
         header p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin: 10px 0;
         }
         nav {
-            background-color: #4caf50;
+            background-color: #388e3c;
             padding: 15px;
             text-align: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -37,34 +37,54 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 20px;
-            font-size: 1.1em;
+            margin: 0 15px;
+            font-size: 1em;
             font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
         }
         section {
-            max-width: 900px;
-            margin: 30px auto;
+            max-width: 1000px;
+            margin: 20px auto;
             padding: 20px;
             background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         h2 {
             color: #1b5e20;
             text-align: center;
-            font-size: 2em;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        .intro img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin: 20px auto;
+        }
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+        .services ul li {
+            background-color: #e8f5e9;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 1.1em;
         }
         .gallery {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 15px;
             justify-content: center;
         }
         .gallery img {
-            width: 280px;
+            width: 100%;
             height: 200px;
             object-fit: cover;
             border-radius: 8px;
@@ -73,19 +93,30 @@
         .gallery img:hover {
             transform: scale(1.05);
         }
-        .services ul {
-            list-style-type: none;
-            padding: 0;
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
         }
-        .services ul li {
-            background-color: #e8f5e9;
-            margin: 10px 0;
-            padding: 15px;
+        .contact input, .contact textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
             border-radius: 5px;
+            font-size: 1em;
         }
-        .contact p {
-            font-size: 1.1em;
-            margin: 10px 0;
+        .contact button {
+            background-color: #388e3c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .contact button:hover {
+            background-color: #1b5e20;
         }
         footer {
             background-color: #1b5e20;
@@ -100,10 +131,9 @@
             }
             nav a {
                 margin: 0 10px;
-                font-size: 1em;
+                font-size: 0.9em;
             }
             .gallery img {
-                width: 100%;
                 height: auto;
             }
         }
@@ -112,48 +142,53 @@
 <body>
     <header>
         <h1>Robert Élagage</h1>
-        <p>Votre partenaire pour des arbres sains et des jardins impeccables</p>
+        <p>Expert en élagage et entretien des espaces verts</p>
     </header>
 
     <nav>
         <a href="#accueil">Accueil</a>
         <a href="#services">Services</a>
-        <a href="#galerie">Réalisations</a>
+        <a href="#galerie">Galerie</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <section id="accueil">
+    <section id="accueil" class="intro">
         <h2>Bienvenue chez Robert Élagage</h2>
-        <p>Spécialisée dans l’élagage et l’entretien des espaces verts, notre entreprise met son expertise à votre service pour garantir la santé de vos arbres et la beauté de vos jardins. Basés en France, nous intervenons avec professionnalisme et respect de l’environnement.</p>
+        <p>Nous sommes une entreprise spécialisée dans l’élagage, l’abattage et l’entretien des espaces verts. Avec des années d’expérience, nous offrons des services professionnels pour garantir la santé de vos arbres et la beauté de vos jardins. Contactez-nous pour un devis gratuit !</p>
+        <img src="https://images.unsplash.com/photo-1620131987136-c67d8819a117?q=80&w=800&auto=format&fit=crop" alt="Élagage d’un arbre">
     </section>
 
     <section id="services" class="services">
         <h2>Nos Services</h2>
-        <p>Nous offrons une gamme complète de services pour répondre à tous vos besoins :</p>
         <ul>
-            <li><strong>Élagage d’arbres</strong> : Taille précise pour améliorer la santé et l’esthétique des arbres.</li>
-            <li><strong>Abattage sécurisé</strong> : Suppression d’arbres dangereux ou gênants avec des techniques professionnelles.</li>
+            <li><strong>Élagage</strong> : Taille douce ou sévère pour maintenir la santé et l’esthétique des arbres.</li>
+            <li><strong>Abattage</strong> : Suppression sécurisée d’arbres dangereux ou gênants.</li>
             <li><strong>Débroussaillage</strong> : Nettoyage de terrains pour prévenir les risques d’incendie.</li>
-            <li><strong>Entretien de jardins</strong> : Taille de haies, tonte, et soin des espaces verts.</li>
-            <li><strong>Conseils d’experts</strong> : Diagnostics et recommandations pour vos arbres.</li>
+            <li><strong>Taille de haies</strong> : Entretien précis pour des haies nettes et esthétiques.</li>
+            <li><strong>Entretien de jardins</strong> : Tonte, soin des espaces verts et conseils personnalisés.</li>
         </ul>
     </section>
 
-    <section id="galerie">
+    <section id="galerie" class="gallery">
         <h2>Nos Réalisations</h2>
         <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1620131987136-c67d8819a117?q=80&w=800&auto=format&fit=crop" alt="Élagage d’un grand arbre">
-            <img src="https://images.unsplash.com/photo-1597071543902-a0c7fd4a9b04?q=80&w=800&auto=format&fit=crop" alt="Abattage professionnel">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="Jardin entretenu">
+            <img src="https://images.unsplash.com/photo-1597071543902-a0c7fd4a9b04?q=80&w=800&auto=format&fit=crop" alt="Abattage d’arbre">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="Entretien de jardin">
+            <img src="https://images.unsplash.com/photo-1620131987136-c67d8819a117?q=80&w=800&auto=format&fit=crop" alt="Élagage professionnel">
         </div>
     </section>
 
     <section id="contact" class="contact">
         <h2>Contactez-nous</h2>
         <p>Pour un devis gratuit ou toute question, contactez-nous :</p>
-        <p><strong>Téléphone</strong> : [Votre numéro de téléphone]</p>
-        <p><strong>Email</strong> : [Votre email]</p>
-        <p><strong>Adresse</strong> : [Votre adresse, ou supprimez cette ligne si non nécessaire]</p>
+        <p><strong>Téléphone</strong> : 0608080808</p>
+        <p><strong>Email</strong> : Robert-elagage@gmail.com </p>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
     </section>
 
     <footer>
