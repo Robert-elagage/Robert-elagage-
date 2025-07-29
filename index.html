@@ -76,15 +76,15 @@
         }
 
         #accueil {
-            background:  #2e7d32; /* Fond gris clair pour contraste */
+            background: #f4f4f4; /* Fond gris clair pour contraste */
         }
 
         #services, #a-propos {
-            background: #e0f2e9; /* Remplacement du blanc par vert clair */
+            background: #e0f2e9; /* Vert clair à la place du blanc */
         }
 
         #contact {
-            background: #e0f2e9; /* Déjà vert clair pour cohérence */
+            background: #e0f2e9; /* Vert clair pour cohérence */
         }
 
         h2 {
@@ -102,7 +102,7 @@
         }
 
         .service-card {
-            background: #e0f2e9; /* Remplacement du blanc par vert clair */
+            background: #e0f2e9; /* Vert clair à la place du blanc */
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -113,37 +113,19 @@
             color: #2e7d32;
         }
 
-        /* Formulaire de contact */
-        #contact form {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: left;
+        /* Section Contact (texte seulement) */
+        #contact p {
+            font-size: 1.2rem;
+            margin: 10px 0;
         }
 
-        #contact label {
-            display: block;
-            margin: 10px 0 5px;
+        #contact a {
+            color: #2e7d32;
+            text-decoration: none;
         }
 
-        #contact input, #contact textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        #contact button {
-            background: #2e7d32;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        #contact button:hover {
-            background: #1b5e20;
+        #contact a:hover {
+            text-decoration: underline;
         }
 
         /* Footer */
@@ -192,52 +174,4 @@
     <!-- Section Accueil -->
     <section id="accueil">
         <h2>Bienvenue chez Robert Élagage</h2>
-        <p>Nous offrons des services professionnels d'élagage, d'abattage et d'entretien d'arbres pour particuliers et entreprises. Faites confiance à notre expertise pour sublimer votre environnement.</p>
-    </section>
-
-    <!-- Section Services -->
-    <section id="services">
-        <h2>Nos Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Élagage d'arbres</h3>
-                <p>Taille douce ou sévère pour la santé et l'esthétique de vos arbres.</p>
-            </div>
-            <div class="service-card">
-                <h3>Abattage</h3>
-                <p>Abattage sécurisé d'arbres dangereux ou encombrants.</p>
-            </div>
-            <div class="service-card">
-                <h3>Entretien de jardins</h3>
-                <p>Tonte, désherbage et aménagement pour un jardin impeccable.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section À propos -->
-    <section id="a-propos">
-        <h2>À Propos de Nous</h2>
-        <p>Avec plus de 10 ans d'expérience, Robert Élagage est votre partenaire de confiance pour tous vos travaux d'élagage et d'entretien paysager. Nous sommes passionnés par la nature et engagés à fournir un service de qualité.</p>
-    </section>
-
-    <!-- Section Contact -->
-    <section id="contact">
-        <h2>Contactez-nous</h2>
-        <form>
-            <label for="nom">Nom</label>
-            <input type="text" id="nom" name="nom" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Robert Élagage. Tous droits réservés.</p>
-        <p>Contact : contact@robert-elagage.fr | 01 23 45 67 89</p>
-    </footer>
-</body>
-</html>
+        <p>Nous offrons des services professionnels d'élagage, d'abattage et d'entretien d'arbres pour particuliers et entreprises
