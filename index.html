@@ -3,78 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert Élagage - Services d'Élagage Professionnels</title>
+    <title>Robert Élagage - Services d'Élagage</title>
     <style>
-        /* CSS intégré pour simplifier (pas besoin de modifier styles.css) */
+        /* CSS intégré pour un design clair et professionnel */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f5f6f5;
             color: #333;
+            line-height: 1.6;
         }
         header {
-            background-color: #2e7d32;
+            background-color: #1b5e20;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 40px 20px;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.8em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0;
         }
         nav {
             background-color: #4caf50;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 20px;
+            font-size: 1.1em;
             font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
         }
         section {
-            max-width: 800px;
-            margin: 20px auto;
+            max-width: 900px;
+            margin: 30px auto;
             padding: 20px;
             background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         h2 {
-            color: #2e7d32;
+            color: #1b5e20;
             text-align: center;
+            font-size: 2em;
         }
         .gallery {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 15px;
             justify-content: center;
         }
         .gallery img {
-            width: 300px;
-            height: auto;
+            width: 280px;
+            height: 200px;
+            object-fit: cover;
             border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .services ul li {
+            background-color: #e8f5e9;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .contact p {
+            font-size: 1.1em;
+            margin: 10px 0;
         }
         footer {
-            background-color: #2e7d32;
+            background-color: #1b5e20;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                margin: 0 10px;
+                font-size: 1em;
+            }
+            .gallery img {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Robert Élagage</h1>
-        <p>Votre expert en élagage et entretien d’arbres</p>
+        <p>Votre partenaire pour des arbres sains et des jardins impeccables</p>
     </header>
 
     <nav>
@@ -86,36 +124,36 @@
 
     <section id="accueil">
         <h2>Bienvenue chez Robert Élagage</h2>
-        <p>Nous sommes spécialisés dans l’élagage, l’abattage et l’entretien des arbres dans toute la région. Avec des années d’expérience, nous garantissons un travail soigné, sécurisé et respectueux de l’environnement. Faites confiance à notre équipe pour sublimer vos espaces verts !</p>
+        <p>Spécialisée dans l’élagage et l’entretien des espaces verts, notre entreprise met son expertise à votre service pour garantir la santé de vos arbres et la beauté de vos jardins. Basés en France, nous intervenons avec professionnalisme et respect de l’environnement.</p>
     </section>
 
-    <section id="services">
+    <section id="services" class="services">
         <h2>Nos Services</h2>
-        <p>Nous proposons une gamme complète de services pour vos arbres et jardins :</p>
+        <p>Nous offrons une gamme complète de services pour répondre à tous vos besoins :</p>
         <ul>
-            <li><strong>Élagage d’arbres</strong> : Taille douce ou sévère pour préserver la santé et l’esthétique de vos arbres.</li>
-            <li><strong>Abattage</strong> : Suppression sécurisée d’arbres dangereux ou encombrants.</li>
+            <li><strong>Élagage d’arbres</strong> : Taille précise pour améliorer la santé et l’esthétique des arbres.</li>
+            <li><strong>Abattage sécurisé</strong> : Suppression d’arbres dangereux ou gênants avec des techniques professionnelles.</li>
             <li><strong>Débroussaillage</strong> : Nettoyage de terrains pour prévenir les risques d’incendie.</li>
             <li><strong>Entretien de jardins</strong> : Taille de haies, tonte, et soin des espaces verts.</li>
-            <li><strong>Conseils personnalisés</strong> : Diagnostics pour la santé de vos arbres et recommandations adaptées.</li>
+            <li><strong>Conseils d’experts</strong> : Diagnostics et recommandations pour vos arbres.</li>
         </ul>
     </section>
 
     <section id="galerie">
         <h2>Nos Réalisations</h2>
         <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1620131987136-c67d8819a117?q=80&w=800&auto=format&fit=crop" alt="Élagage d’un arbre">
-            <img src="https://images.unsplash.com/photo-1597071543902-a0c7fd4a9b04?q=80&w=800&auto=format&fit=crop" alt="Abattage d’arbre">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="Entretien de jardin">
+            <img src="https://images.unsplash.com/photo-1620131987136-c67d8819a117?q=80&w=800&auto=format&fit=crop" alt="Élagage d’un grand arbre">
+            <img src="https://images.unsplash.com/photo-1597071543902-a0c7fd4a9b04?q=80&w=800&auto=format&fit=crop" alt="Abattage professionnel">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="Jardin entretenu">
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact">
         <h2>Contactez-nous</h2>
-        <p>Pour un devis gratuit ou plus d’informations, contactez-nous :</p>
-        <p><strong>Téléphone</strong> : 01 23 45 67 89</p>
-        <p><strong>Email</strong> : contact@robert-elagage.fr</p>
-        <p><strong>Adresse</strong> : [Ajoute ton adresse ici, ou supprime cette ligne si tu n’en veux pas]</p>
+        <p>Pour un devis gratuit ou toute question, contactez-nous :</p>
+        <p><strong>Téléphone</strong> : [Votre numéro de téléphone]</p>
+        <p><strong>Email</strong> : [Votre email]</p>
+        <p><strong>Adresse</strong> : [Votre adresse, ou supprimez cette ligne si non nécessaire]</p>
     </section>
 
     <footer>
