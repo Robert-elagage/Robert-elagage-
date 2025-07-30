@@ -181,9 +181,8 @@ h2 {
 }
 
 .service-image {
-    max-width: 300px; /* Taille pour services.html (desktop et version web) */
-    min-width: 300px; /* Forcer la taille en mode version web */
-    width: 100%;
+    width: 300px !important; /* Forcer la taille pour services.html (desktop et version web) */
+    max-width: 300px;
     height: auto;
     margin: 20px auto;
     border-radius: 8px;
@@ -219,6 +218,6 @@ footer {
 
     .service-image {
         max-width: 200px; /* Images dans services.html sur mobile normal */
-        min-width: auto; /* Pas de min-width en mode mobile normal */
+        width: 100% !important; /* Assurer la responsivité */
     }
 }
