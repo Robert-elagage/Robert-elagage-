@@ -53,8 +53,9 @@ header p {
 nav {
     background: #2e7d32; /* Vert forêt pour la navigation */
     padding: 15px 0;
-    position: sticky;
+    position: sticky; /* Sticky pour desktop */
     top: 0;
+    z-index: 1000; /* Assurer que le menu reste au-dessus */
 }
 
 nav ul {
@@ -203,13 +204,29 @@ footer {
         font-size: 2rem;
     }
 
+    nav {
+        position: fixed; /* Fixer le menu en haut sur mobile */
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
     nav ul {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row; /* Afficher les liens horizontalement */
+        justify-content: space-around; /* Espacer les liens uniformément */
+        flex-wrap: wrap; /* Permettre un retour à la ligne si nécessaire */
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 5px 10px; /* Réduire les marges pour un affichage compact */
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Réduire légèrement la taille du texte pour mobile */
+    }
+
+    section {
+        padding-top: 80px; /* Ajouter un padding pour éviter que le menu fixe ne cache le contenu */
     }
 
     .intro-section img {
