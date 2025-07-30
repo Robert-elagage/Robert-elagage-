@@ -1,4 +1,3 @@
-
 /* Réinitialisation des styles */
 * {
     margin: 0;
@@ -13,11 +12,10 @@ body {
     background-color: #e0f2e9; /* Fond vert clair pour tout le site */
 }
 
-/* En-tête */
 header {
     background-color: #e0f2e9; /* Fond vert uni pour l'en-tête */
     height: 400px;
-    color: #333; /* Texte sombre pour lisibilité */
+    color: #333;
     text-align: center;
     display: flex;
     align-items: center;
@@ -35,7 +33,6 @@ header p {
     margin-top: 10px;
 }
 
-/* Navigation */
 nav {
     background: #2e7d32; /* Vert forêt pour la navigation */
     padding: 15px 0;
@@ -63,7 +60,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Sections */
 section {
     padding: 50px 20px;
     text-align: center;
@@ -107,7 +103,6 @@ h2 {
     color: #2e7d32;
 }
 
-/* Section Contact (texte seulement) */
 #contact p {
     font-size: 1.2rem;
     margin: 10px 0;
@@ -122,7 +117,24 @@ h2 {
     text-decoration: underline;
 }
 
-/* Footer */
+/* Nouvelle section pour le texte ajouté */
+.intro-section {
+    background: #e0f2e9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro-section ul {
+    list-style: disc;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.intro-section ul li {
+    margin-bottom: 10px;
+}
+
 footer {
     background: #333;
     color: white;
@@ -131,7 +143,6 @@ footer {
     margin-top: 20px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
