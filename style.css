@@ -86,12 +86,8 @@ section {
     background: #f4f4f4; /* Fond gris clair pour contraste */
 }
 
-#services, #a-propos {
-    background: #e0f2e9; /* Vert clair à la place du blanc */
-}
-
-#contact {
-    background: #e0f2e9; /* Vert clair pour cohérence */
+#services, #a-propos, #contact {
+    background: #e0f2e9; /* Vert clair */
 }
 
 h2 {
@@ -109,7 +105,7 @@ h2 {
 }
 
 .service-card {
-    background: #e0f2e9; /* Vert clair à la place du blanc */
+    background: #e0f2e9; /* Vert clair */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -140,6 +136,16 @@ h2 {
     text-align: center;
 }
 
+.intro-section img {
+    max-width: 300px; /* Taille pour index.html */
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .intro-section ul {
     list-style: disc;
     margin: 20px auto;
@@ -149,16 +155,6 @@ h2 {
 
 .intro-section ul li {
     margin-bottom: 10px;
-}
-
-.intro-section img {
-    max-width: 300px; /* Taille des images */
-    width: 100%;
-    height: auto;
-    margin: 20px auto;
-    border-radius: 8px;
-    display: block;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .horaires {
@@ -184,6 +180,16 @@ h2 {
     margin-bottom: 15px;
 }
 
+.service-image {
+    max-width: 200px; /* Taille pour services.html */
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 footer {
     background: #333;
     color: white;
@@ -207,6 +213,10 @@ footer {
     }
 
     .intro-section img {
-        max-width: 200px; /* Images plus petites sur mobile */
+        max-width: 200px; /* Images plus petites sur mobile pour index.html */
+    }
+
+    .service-image {
+        max-width: 150px; /* Images plus petites sur mobile pour services.html */
     }
 }
