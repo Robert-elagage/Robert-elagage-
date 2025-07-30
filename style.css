@@ -150,4 +150,73 @@ h2 {
     list-style: disc;
     margin: 20px auto;
     max-width: 600px;
-    text
+    text-align: left;
+}
+
+.intro-section ul li {
+    margin-bottom: 10px;
+}
+
+.horaires {
+    font-size: 1.1rem;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.service-section {
+    margin: 30px auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+.service-section h3 {
+    color: #2e7d32;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-section p {
+    margin-bottom: 15px;
+}
+
+.service-image {
+    max-width: 100px; /* Taille pour services.html */
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .intro-section img {
+        max-width: 200px; /* Images dans index.html sur mobile */
+    }
+
+    .service-image {
+        max-width: 80px; /* Images dans services.html sur mobile */
+    }
+}
