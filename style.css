@@ -161,6 +161,13 @@ h2 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.horaires {
+    font-size: 1.1rem;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
 footer {
     background: #333;
     color: white;
