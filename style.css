@@ -181,7 +181,7 @@ h2 {
 }
 
 .service-image {
-    max-width: 150px; /* Taille pour services.html */
+    max-width: 300px; /* Taille pour services.html */
     width: 100%;
     height: auto;
     margin: 20px auto;
